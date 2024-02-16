@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+body{
+ background: linear-gradient(to right, #00010D,#010626);
+
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+     padding-top: 50px;
+}
+div{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+input{
+    width: 175px;
+    height: 20px; 
+    background-color: rgb(59, 39, 39);
+    color: aliceblue;
+    border: none;
+    font-size: 15px;
+    padding-left: 8px
+
+}
+label{
+    padding: 10px;
+}
+button{
+    width: 90px;
+    height: 20px;
+    margin: 10px;
+    color: aliceblue;
+    background-color: rgba(48, 75, 75, 0.664);
+    border: none;
+}
+
+p{
+    color: aliceblue;
+    text-align: center;
+    border:10px  solid rgb(255, 255, 255)
+}
