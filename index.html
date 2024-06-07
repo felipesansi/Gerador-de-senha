@@ -7,14 +7,23 @@
     <title>Gerador de senha</title>
 </head>
 <body>
-    <h1>Gerador de senha</h1>
-<div>
-    <label for="lbl_tamanho">Tamanho:</label>
-        <input type="text" id="tamanho"
-        placeholder="digite o tamanho da senha">
-<button type="submit" onclick="GeradorSenha()" >Gerar</button>
+
+ <div class="container">
+ <div class="lado_esquerdo">
+   <h1>Gerador de Senha</h1>
+   <input type="number" placeholder="Quantidade de números: 8" id="tamanho">
+
+    <button type="submit "onclick ="GeradorSenha()" id= "btn_gerar">GERAR</button>
+  
+    <h2> Senha gerada</h2>
+    <input type="text" id="gerada_senha">
+    <button type="submit" onclick="CopiarSenha()" id="btn_copiar">Copiar Senha</button>
 </div>
-<p id="gerada_senha"></p>
+<div class="lado_direito"> 
+      <img src="imagens/img_user.png" alt="imagem de ilústração" >
+</div>
+
+</div>
 <script src="gerador.js"></script>
 </body>
 </html>
