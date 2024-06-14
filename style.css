@@ -1,86 +1,59 @@
 @charset "UTF-8";
 
-*{
-    padding: 0;
-    margin: 0;
-    box-shadow: none;
-    
-}
-
-body
-{
+body {
     background-color: #367CFF;
     height: 100%;
-    width: 100%
-
-}
-.container{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.lado_esquerdo h1
-{
-     display: flex;
-     color: white;
-  
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
-.lado_esquerdo h2
-{
-     display: flex;
-     color: white;
-     margin-top: 20px;
-  
+
+h1, h2 {
+    color: white;
 }
-.lado_esquerdo input
-{
-    background-color: #D9D9D9;
-    width: 200px;
+
+input[type="number"],
+input[type="text"] {
+    background-color: #423939e3;
+    color: aliceblue;
+    width: 60%;
     height: 40px;
     border: none;
-    border-radius: 15px 10px ;
+    border-radius: 15px 10px;
     margin-top: 20px;
-    display: flex;
+    padding: 5px 10px;
 }
-.lado_direito
-{
-    display: flex;
-    background-color: #2F8AA7;
-    width: 700px;
-    height: 700px;
+
+input[type="text"] {
+    cursor: default;
 }
-.lado_direito img
-{
-width: 600px;
-height: 500px;
-margin-top: 50px;
-margin-left: 10px;
-}
-.lado_esquerdo
-{
-margin: 0px 0px 200px 200px;
-width: 700px;
-}
-#btn_gerar{
+
+#btn_gerar,
+#btn_copiar {
     background-color: #1E3790;
     color: white;
     border: none;
     width: 90px;
-    height: 40px;
+    height: 60px;
     border-radius: 15px;
     cursor: pointer;
     margin-top: 20px;
 }
 
-#btn_copiar{
+#btn_copiar {
     background-color: #222324;
-    color: white;
-    border: none;
-    width: 90px;
-    height: 40px;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-top: 20px;
+}
+
+.lado_direito img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 20px;
 }
